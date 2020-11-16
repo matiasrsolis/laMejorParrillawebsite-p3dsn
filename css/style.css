@@ -300,6 +300,7 @@ nav#secondaryNav i.fab.fontWhite{
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .separator .middles{
@@ -479,22 +480,37 @@ nav#secondaryNav i.fab.fontWhite{
 
 
 .banner{
-    margin-bottom: 2em
+    margin: 0 0 3.5em 0;
 }
 
 
 /*-Videos-*/
+section#videos {
+    margin-bottom: 2em;
+}
+
 #videos .contentYT{
     display: flex;
     flex-direction: column;
 }
 
+#videos .videosList{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-between;
+}
+
+#videos .videosList>a{
+    width: 48%;
+}
+
 #videos .videosList>a .videoItem{
     display: flex;
+    flex-direction: column;
 }
 
 #videos .videosList>a .videoItem figure{
-    width: 60%;
+    width: 100%;
 }
 
 #videos .videosList>a .videoItem figure img{
@@ -506,6 +522,7 @@ nav#secondaryNav i.fab.fontWhite{
     margin: 0;
     padding: 0;
     border-radius: 0;
+    margin-bottom: .5em;
 }
 
 #videos .videosList .nav-link.active{
@@ -513,13 +530,139 @@ nav#secondaryNav i.fab.fontWhite{
 }
 
 #videos .videosList>a .videoItem .videoInfo{
-    width: 60%;
+    width: 100%;
+    padding: .5em;
+}
+
+#videos .videosList>a .videoItem .videoInfo h3{
+    font-size: 1.25em
+}
+
+#videos .videosList>a .videoItem .videoInfo p{
+    font-size: .875em;
+    display: none
+}
+
+#videos .videoDetail{
+    
 }
 
 .nav-pills .nav-link.active{
-    background-color: #FFF0D1
+    background-color: #FFF0D1;
+/*    display: none;*/
 }
 
+.videoContenedor{
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%; 
+    margin-bottom: 1em;
+}
+
+.videoContenedor iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.videoDetail>div h3{
+    font-size: 2em;
+    text-align: center;
+}
+
+.videoDetail>div p{
+    text-align: center;
+}
+
+.videoDetail>div .descriptionVideo{
+    padding: .5em 0 2em 0;
+}
+
+.videoDetail>div .separator figure{
+    height: 4em;
+}
+
+.videoDetail>div .separator figure img{
+    width: 61%;
+}
+
+.contentYT{
+    margin-top:2em;
+}
+
+.tituloSection{
+    display: flex;
+    
+}
+
+.tituloSection .imageSection{
+    width: 30%;
+    height: 4.75em;
+    max-width: 120px;
+}
+
+.tituloSection h2{
+    font-size: 40px;
+    display: inline-flex
+}
+
+.dobleSubrayado{
+    border-bottom: #000 1px solid;
+    margin-bottom: .5em;
+    position: relative;
+    flex: 1;
+}
+
+.dobleSubrayado::after{
+    content: " ";
+    width: 100%;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+#videos .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/25.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#videos .tituloSection h2{
+    display: flex;
+}
+
+#videos .tituloSection h2::after{
+    content: " ";
+    background-image: url(../img/ilustraciones/18.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position: center;
+    background-size: contain;
+    width: 54px;
+    margin-left: .35em;
+}
+
+#parrillasDelMes .tituloSection h2::after{
+    content: " ";
+    background-image: url(../img/ilustraciones/5.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position: center;
+    background-size: contain;
+    width: 54px;
+    margin-left: .35em;
+}
+
+#parrillasDelMes .tituloSection .imageSection {
+    background-image: url(../img/ilustraciones/2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
 
 /* ------------------ Mediaquery ------------------ */
@@ -666,19 +809,20 @@ nav#secondaryNav i.fab.fontWhite{
     
     
     
-    /*-Videos-*/
-    #videos .contentYT{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
+    /*-Videos-*/        
+    #videos .videosList>a{
+        width: 23.5%;
     }
     
-    #videos .contentYT .videoDetail {
-        width: 70%
+    #videos .videosList>a .videoItem{
+        padding: .5em;
+        padding-bottom: 0;
     }
     
-    #videos .contentYT .videosList{
-        width: 30%;
+    #videos .videosList>a .videoItem .videoInfo p{
+        display: block;
+        margin: 0;
+        line-height: 20px;
     }
     
 }
@@ -798,6 +942,44 @@ nav#secondaryNav i.fab.fontWhite{
         height: 30px;
         margin-top: .2em;
         margin-right: .5em;
+    }
+    
+    
+    /*-Videos-*/
+    #videos .contentYT .videosList{
+        margin-left: 2em;
+        width: 35%;
+    }
+    
+    #videos .contentYT{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    section#videos {
+        margin-bottom: 2em;
+    }
+    
+    #videos .contentYT .videoDetail {
+        width: 70%
+    }
+    
+    #videos .videosList>a{
+        width: 100%;
+    }
+    
+    #videos .videosList>a .videoItem{
+        flex-direction: row;
+    }
+    
+    #videos .videosList>a .videoItem figure{
+        padding: .5em
+    }
+    
+    
+    .tituloSection .imageSection{
+        height: 4.5em;
     }
     
 }
