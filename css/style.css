@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+body{
+    font-family: 'Manjari', sans-serif;
+}
+
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -22,10 +26,6 @@ a{
 
 a:hover{
     color: #1D1D1B;
-}
-
-body{
-    font-family: 'Manjari', sans-serif;
 }
 
 .bgWhite{
@@ -55,26 +55,35 @@ body{
 }
 
 .btnStrongOrange:hover{
-    background-color: #e52300;
+    background-color: #EB742B;
     text-decoration: none;
     transition: all .2s ease;
     color: #FFFFFF;
+}
+
+.manjari{
+    font-family: 'Manjari', sans-serif;
 }
 
 .mayuscula{
     text-transform: uppercase;
 }
 
-.fontWhite{
-    color: #ffffff;
-}
 
 .normal{
     font-style: normal;
 }
 
 .fontBlack{
-    color: #1D1D1B
+    color: #1D1D1B;
+}
+
+.fontWhite{
+    color: #ffffff;
+}
+
+.fontStrongOrange{
+    color: #EB4800;
 }
 
 .fontRed{
@@ -131,6 +140,7 @@ figure{
     padding: .2em .2em;
     text-transform: uppercase;
     color: #ffffff;
+    padding-bottom: 0;
 }
 
 .contentFlag::before{
@@ -340,6 +350,7 @@ nav#secondaryNav i.fab.fontWhite{
 
 #portal ul li{
     width: 100%;
+    margin-bottom: 3em;
 }
 
 #portal ul li:first-child{
@@ -363,17 +374,18 @@ nav#secondaryNav i.fab.fontWhite{
 
 #portal ul li:not(:first-of-type) a>div{
     text-align: center;
-    margin-top: 2em
+    margin-top: 1.5em
 }
 
 #portal ul li:not(:first-of-type) h3{
     font-size: 1.5em;
     text-align: center;
+    margin-top: .3em;
 }
 
-#portal ul li:first-child figure{
+/*#portal ul li:first-child figure{
     order: 1
-}
+}*/
 
 #portal ul li figure img{
     object-fit: cover;
@@ -410,6 +422,50 @@ nav#secondaryNav i.fab.fontWhite{
 #portal ul li:first-child .contentFlag{
     margin-left: 1.5em
 }
+
+
+
+/*-Banner-*/
+.banner{
+    padding: 1em;
+    padding-top: 5em;
+    padding-bottom: 1.5em;
+    position: relative
+}
+
+.banner .lineBanner{
+    
+}
+
+.banner .lineBanner figure{
+    /*width: 8.5em;*/
+    margin: auto;
+    position: relative;
+    left: 1em;
+    margin-bottom: 1em;
+    position: absolute;
+    top: .5em;
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.banner .titleBanner{
+    border: 2px solid #EB742B;
+    padding-top: 1em;
+}
+
+.banner .lineBanner figure img{
+    object-fit: contain;
+    width: 8.5em;
+}
+
+.banner .lineBanner h3{
+    text-align: center;
+    margin: 1em 0;
+}
+
+
 
 
 /* ------------------ Mediaquery ------------------ */
@@ -483,6 +539,7 @@ nav#secondaryNav i.fab.fontWhite{
     
     #portal ul li:first-child figure{
         width: 50%;
+        order: 1
     }
     
     #portal ul li:first-child .infoPortal h2{
@@ -499,6 +556,57 @@ nav#secondaryNav i.fab.fontWhite{
     #portal ul li:first-child .infoPortal{
         margin-bottom: 0;
     }
+    
+    
+    /*-Banner-*/
+    .banner{
+        padding:0;
+    }
+    
+    .lineBanner{
+        display: flex;
+        align-items: center;
+    }
+    
+    .banner .titleBanner{
+        padding-top: 0;
+        clip-path: polygon(41px 0%, 100% 0%, 100% 100%, 0% 100%);
+        margin: .7em;
+        /*margin-left: 0;*/
+        margin-left: 9em;
+        width: 100%;
+    }
+    
+    .banner .lineBanner figure{
+        /*position: static;*/
+        width: 10em;
+        margin: 0;
+    }
+    
+    .banner .lineBanner h3{
+        /*margin: .6em 0;*/
+        margin: 1.2em 0;
+        padding-left: 2em;
+        font-size: 25px;
+    }
+    
+    .banner .lineBanner figure img{
+        width: 7.5em;
+    }
+    
+    .banner .lineBanner h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner .lineBanner h3 span.fontStrongOrange{
+        margin-left: 7px;
+        display: inline
+    }
+    
+    
+    
     
 }
 
@@ -551,6 +659,45 @@ nav#secondaryNav i.fab.fontWhite{
         padding-right: 3.5em;
     }
     
+    
+    /*-Banner-*/
+    .banner .lineBanner h3{
+        font-size: 27px;
+    }
+    
+    .banner .lineBanner h3{
+        margin: .8em 0;
+    }
+    
+    .titleBanner h3.titleuno::after{
+        content: " ";
+        background-image: url(../img/ilustraciones/19.png);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: center;
+        background-size: contain;
+        width: 55px;
+        height: 24px;
+        margin-left: .5em;
+        top: 0;
+        margin-top: .2em;
+    }
+    
+    .titleBanner h3.titleuno::before{
+        content: " ";
+        background-image: url(../img/ilustraciones/20.png);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: center;
+        background-size: contain;
+        width: 59px;
+        height: 28px;
+        margin-top: .2em;
+        margin-right: .5em;
+    }
+    
 }
 
 /*-Desktop-*/
@@ -586,5 +733,9 @@ nav#secondaryNav i.fab.fontWhite{
     
     .followusNav{
         margin-top: 3em;
+    }
+    
+    .banner .lineBanner h3{
+        font-size: 32px;
     }
 }
