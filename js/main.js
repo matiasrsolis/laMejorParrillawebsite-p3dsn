@@ -4,5 +4,5 @@ $(document).ready(function(){
         $(".iconMenu").toggleClass("none");
         $(".iconCloseHide").toggleClass("iconClose");
         $("#logoHeader").toggleClass("logoSmall");
-    })
+    });
 })

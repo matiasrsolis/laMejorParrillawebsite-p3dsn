@@ -82,6 +82,10 @@ a:hover{
     color: #ffffff;
 }
 
+.fontOrange{
+    color: #EB742B;
+}
+
 .fontStrongOrange{
     color: #EB4800;
 }
@@ -433,6 +437,14 @@ nav#secondaryNav i.fab.fontWhite{
     position: relative
 }
 
+.banner:hover{
+    background-color: #ffe6b2
+}
+
+.banner:hover .lineBanner h3{
+    text-decoration: none
+}
+
 .banner .lineBanner{
     
 }
@@ -465,6 +477,48 @@ nav#secondaryNav i.fab.fontWhite{
     margin: 1em 0;
 }
 
+
+.banner{
+    margin-bottom: 2em
+}
+
+
+/*-Videos-*/
+#videos .contentYT{
+    display: flex;
+    flex-direction: column;
+}
+
+#videos .videosList>a .videoItem{
+    display: flex;
+}
+
+#videos .videosList>a .videoItem figure{
+    width: 60%;
+}
+
+#videos .videosList>a .videoItem figure img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#videos .videosList>a{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+#videos .videosList .nav-link.active{
+    color: #1D1D1B
+}
+
+#videos .videosList>a .videoItem .videoInfo{
+    width: 60%;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #FFF0D1
+}
 
 
 
@@ -605,8 +659,27 @@ nav#secondaryNav i.fab.fontWhite{
         display: inline
     }
     
+    .titleBanner .titleuno .fa-youtube:before{
+        margin-right: .3em;
+        font-size: 1.5em;
+    }
     
     
+    
+    /*-Videos-*/
+    #videos .contentYT{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    #videos .contentYT .videoDetail {
+        width: 70%
+    }
+    
+    #videos .contentYT .videosList{
+        width: 30%;
+    }
     
 }
 
@@ -669,7 +742,7 @@ nav#secondaryNav i.fab.fontWhite{
         margin: .8em 0;
     }
     
-    .titleBanner h3.titleuno::after{
+    #bannerAgregar .titleBanner h3.titleuno::after{
         content: " ";
         background-image: url(../img/ilustraciones/19.png);
         background-repeat: no-repeat;
@@ -684,7 +757,7 @@ nav#secondaryNav i.fab.fontWhite{
         margin-top: .2em;
     }
     
-    .titleBanner h3.titleuno::before{
+    #bannerAgregar .titleBanner h3.titleuno::before{
         content: " ";
         background-image: url(../img/ilustraciones/20.png);
         background-repeat: no-repeat;
@@ -694,6 +767,35 @@ nav#secondaryNav i.fab.fontWhite{
         background-size: contain;
         width: 59px;
         height: 28px;
+        margin-top: .2em;
+        margin-right: .5em;
+    }
+    
+    #followYT .titleBanner h3.titleuno::after{
+        content: " ";
+        background-image: url(../img/ilustraciones/17.png);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: center;
+        background-size: contain;
+        width: 53px;
+        height: 26px;
+        margin-left: .5em;
+        top: 0;
+        margin-top: .2em;
+    }
+    
+    #followYT .titleBanner h3.titleuno::before{
+        content: " ";
+        background-image: url(../img/ilustraciones/26.png);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: center;
+        background-size: contain;
+        width: 44px;
+        height: 30px;
         margin-top: .2em;
         margin-right: .5em;
     }
@@ -737,5 +839,9 @@ nav#secondaryNav i.fab.fontWhite{
     
     .banner .lineBanner h3{
         font-size: 32px;
+    }
+    
+    .banner:hover h3{
+        text-decoration: none;
     }
 }
