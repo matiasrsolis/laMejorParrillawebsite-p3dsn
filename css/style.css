@@ -619,7 +619,7 @@ section#videos {
 }
 
 .tituloSection h2{
-    font-size: 40px;
+    font-size: 32px;
     display: inline-flex
 }
 
@@ -666,10 +666,13 @@ section#videos {
     background-image: url(../img/ilustraciones/5.png);
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position: center;
+    background-position: bottom;
     background-size: contain;
-    width: 54px;
+    width: 34px;
+    height: 25px;
     margin-left: .35em;
+    margin-top: auto;
+    display: none
 }
 
 #parrillasDelMes .tituloSection .imageSection {
@@ -855,6 +858,60 @@ section#videos {
 
 #destacada .destacadaInfo .tagSection img{
     margin: auto
+}
+
+
+/*-Parrillas del mes-*/
+#parrillasDelMes .mesListado{
+    margin-top: 2em
+}
+
+#parrillasDelMes .mesListado ul{
+    margin-bottom: 2em;
+}
+
+#parrillasDelMes .mesListado ul li{
+    padding: .5em 0 1.3em;
+    border-top: solid 2px #EB4800;
+    margin-bottom: .5em
+}
+
+#parrillasDelMes .mesListado ul li>a{
+    display: flex;
+    flex-direction: column;
+}
+
+#parrillasDelMes .mesListado ul li>a figure{
+    width: 100%;
+    height: 10em;
+    overflow: hidden;
+}
+
+#parrillasDelMes .mesListado ul li>a figure img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+#parrillasDelMes .mesListado ul li>a figure:hover img{
+    width: 110%;
+    height: 110%;
+    transition: all .3s ease;
+}
+
+#parrillasDelMes .mesListado ul li .mesInfo{
+    text-align: center;
+}
+
+#parrillasDelMes .mesListado ul li .mesInfo h3{
+    font-size: 1.5em;
+    margin-top: .3em
+}
+
+#parrillasDelMes .mesListado ul li .mesInfo div a{
+    color: #EB4800;
 }
 
 
@@ -1070,6 +1127,26 @@ section#videos {
     
     #destacada .destacadaInfo .tagSection{
         top: -58px;
+    }
+    
+    /*-Destacadas del mes-*/
+    #parrillasDelMes .tituloSection h2::after{
+        display: block;
+    }
+    
+    .tituloSection h2{
+        font-size: 40px;
+        display: inline-flex
+    }
+    
+    
+    /*-Parrillas del mes-*/
+    #parrillasDelMes .mesListado ul{
+        justify-content: space-between
+    }
+    
+    #parrillasDelMes .mesListado ul li{
+        width: 23.7%
     }
 }
 
