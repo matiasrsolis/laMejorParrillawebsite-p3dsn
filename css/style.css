@@ -792,24 +792,21 @@ section#videos {
     width: 100%;
     position: relative;
     margin-left: 0;
-    margin-top: 3em;
+    margin-top: 0;
 }
 
-#destacada figure{
+#destacada>figure{
     height: 100%;
+    outline: 2px dotted #ffffff;
+    outline-offset: -.5em;
 }
 
-#destacada figure img{
+#destacada>figure img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     object-position: center;
 }
-
-/*#destacada figure img:hover{
-    width: 120%;
-    height: 120%;
-}*/
 
 #destacada .destacadaInfo{
     background-color: #1D1D1B;
@@ -818,11 +815,16 @@ section#videos {
     padding: 1em;
     padding-top: 5em;
     position: relative;
-    opacity: .9
+    opacity: .9;
+}
+
+#destacada .destacadaInfo .contentInfoDestacada{
+    max-width: 23em;
+    margin: auto;
 }
 
 #destacada .destacadaInfo .separator{
-    margin-bottom: 2em
+    margin-bottom: 0em
 }
 
 #destacada .destacadaInfo .separator .middles{
@@ -831,7 +833,8 @@ section#videos {
 
 #destacada .destacadaInfo .separator>figure{
     width: 53px;
-    margin: 0 .7em
+    margin: 0 .7em;
+    padding: 0
 }
 
 #destacada .destacadaInfo .tagSection{
@@ -1053,6 +1056,21 @@ section#videos {
         left: -2%;
     }
     
+    
+    /*-Destacada-*/
+    #destacada>figure{
+        height: 100%;
+        outline: 2px dotted #ffffff;
+        outline-offset: -1em;
+    }
+    
+    #destacada .destacadaInfo{
+        padding-top: 3em
+    }
+    
+    #destacada .destacadaInfo .tagSection{
+        top: -58px;
+    }
 }
 
 /*-Laptop-*/
@@ -1259,7 +1277,12 @@ section#videos {
     
     #destacada .destacadaInfo{
         position: absolute;
-        bottom: 0;
+        bottom: 1.7em;
+        right: 1.7em;
+    }
+    
+    #destacada .destacadaInfo .separator{
+        margin-bottom: 2em
     }
     
     #ranking .rankingTitle{
