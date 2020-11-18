@@ -984,6 +984,101 @@ footer div .footDown .copyright{
 }
 
 
+/*-Parrilla List-*/
+#parrillaList>section{
+    margin-top: 2em
+}
+
+#parrillaList .tituloSection .imageSection {
+    background-image: url(../img/ilustraciones/7.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    display: none
+}
+
+#parrillaList .tituloSection .dobleSubrayado{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#parrillaList .tituloSection .dobleSubrayado form{
+    margin-top: .7em;
+    margin-bottom: 1em
+}
+
+#parrillaList .tituloSection .dobleSubrayado form label{
+    display: none;
+}
+
+#parrillaList .tituloSection .dobleSubrayado form select{
+    border: solid 1px #1D1D1B;
+    width: 100%;
+    padding: .5em .2em;
+    border-radius: 3px;
+}
+
+.listadoItems{
+    margin-top: 2em;
+}
+
+.listadoItems .card{
+    border: none;
+    text-align: center;
+}
+
+.listadoItems .card .card-body{
+    padding: 1em 0!important
+}
+
+.listadoItems .card figure{
+    width: 100%;
+    height: 10em;
+    overflow: hidden;
+}
+
+.listadoItems .card figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transition: all .2s ease;
+}
+
+.listadoItems a:hover h3{
+    text-decoration: none;
+}
+
+.listadoItems .card:hover figure img{
+    width: 110%;
+    height: 110%;
+    transition: all .2s ease;
+}
+
+#pagination{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+#pagination ul{
+    width: 75%;
+    max-width: 14.75em;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#pagination ul li a{
+    display: flex;
+    align-content: center;
+    padding: .3em .25em 0 .25em;
+}
+
+#pagination ul li a.active{
+    color: #ffffff;
+    background-color: #EB4800;
+}
+
+
 /* ------------------ Mediaquery ------------------ */
 
 /*-Tablet-*/
@@ -1495,6 +1590,31 @@ footer div .footDown .copyright{
     
     footer div .footDown .copyright p{
         margin-bottom: 0;
+    }
+    
+    #parrillaList .tituloSection .imageSection{
+        display: block;
+    }
+    
+    #parrillaList .tituloSection .dobleSubrayado form{
+        display: flex;
+        align-items: baseline;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    #parrillaList .tituloSection .dobleSubrayado form label{
+        display: flex;
+        margin-right: .5em;
+    }
+    
+    #parrillaList .tituloSection .dobleSubrayado form select{
+        width: 8em;
+    }
+    
+    /*-Listado de parrillas-*/
+    #parrillaList>section{
+        margin-top: 3.5em
     }
 }
 
