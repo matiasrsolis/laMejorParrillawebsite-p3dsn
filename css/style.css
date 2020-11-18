@@ -219,6 +219,10 @@ header #mainNav #btnMenu{
     margin-right: 1.8em;
 }
 
+header #mainNav #btnMenu:focus{
+    border: none;
+}
+
 header #mainNav #btnMenu i{
     font-size: 1.5em;
 }
@@ -1186,7 +1190,85 @@ footer div .footDown .copyright{
     transition: all .2 ease;
 } 
 
+.bannerVertical{
+    padding: 1em;
+    margin-bottom: 2em;
+}
 
+.bannerVertical .separator .middles{
+    border-bottom: 2px dotted #EB4800;
+}
+
+.bannerVertical .separator>figure{
+    width: 7.3em;
+}
+
+.bannerVertical .separator>figure img{
+    position: relative;
+    left: .8em
+}
+
+.bannerVertical .titleBanner{
+    text-align: center;
+}
+
+.bannerVertical .titleBanner h3{
+    padding: 1em 0;
+}
+
+.bannerVertical .titleBanner h3 i{
+    font-size: 1.7em;
+    margin-bottom: .3em;
+}
+
+.bannerVertical .separator>.separatorBottom{
+    width: 3.25em;
+    margin: 0 1em
+}
+
+.bannerVertical .separator>.separatorBottom img{
+    position: static
+}
+
+.bannerVertical .titleBanner .fa-caret-right::before{
+    font-size: .8em;
+    margin-left: .4em;
+}
+
+#detailParrilla aside .ranking{
+    margin-top: 7em;
+}
+
+#detailParrilla .sectionsDetails{
+    
+}
+
+#detalles .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/16.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 1em;
+    width: 25%;
+    max-height: 4em;
+}
+
+#detailParrilla .moreDetails .sectionsDetails .datosList .redesParrilla a{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    color: #ffffff;
+    font-size: 1em;
+    background-color: #1D1D1B;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+#detailParrilla .moreDetails .sectionsDetails .datosList .redesParrilla i{
+    display: flex;
+    align-items: center;
+}
 
 /* ------------------ Mediaquery ------------------ */
 
