@@ -1255,6 +1255,10 @@ footer div .footDown .copyright{
     margin-top: 7em;
 }
 
+#detailParrilla #ranking::before{
+    background-image: url(../img/ilustraciones/14.png);
+}
+
 #detailParrilla .moreDetails{
     display: flex;
     flex-direction: column;
