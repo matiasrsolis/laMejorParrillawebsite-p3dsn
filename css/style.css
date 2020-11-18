@@ -1079,6 +1079,115 @@ footer div .footDown .copyright{
 }
 
 
+/*-Parrilla Detail-*/
+#detailParrilla{
+    
+}
+
+.interestU ul.detail li:first-child{
+    display: block;
+    margin-bottom: 3em!important;
+}
+
+.interestU ul li figure{
+    height: 12.25em;
+}
+
+.interestU ul li a>div{
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.interestU ul li h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: .3em;
+}
+
+.interestU .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 1em;
+    width: 25%;
+    max-height: 4em;
+}
+
+#detailParrilla .tituloSection{
+    margin-bottom: 2em;
+}
+
+#detailParrilla .tituloSection h2{
+    font-size: 2em;
+}
+
+#detailParrilla article{
+    margin-top: 4em;
+}
+
+#detailParrilla article{
+    flex-direction: column-reverse;
+}
+
+#detailParrilla article .infoParrilla>h1{
+    margin-bottom: .7em;
+}
+
+#detailParrilla article .infoParrilla>p{
+    margin-top: 1.5em;
+    margin-bottom: 2em
+}
+
+#detailParrilla article .infoParrilla{
+    text-align: center;
+}
+
+#detailParrilla article>figure{
+    margin-bottom: 2em;
+} 
+
+#detailParrilla article>figure img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#detailParrilla article .separator>figure{
+    height: 2em;
+}
+
+#detailParrilla .voto{
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+#detailParrilla .voto p{
+    padding: 0 1em
+}
+
+#detailParrilla .voto a{
+    padding: .56em 1em;
+    transition: all .2 ease;
+}
+
+#detailParrilla .voto a:hover{
+    color: #ffffff;
+    text-decoration: none
+}
+
+#detailParrilla .voto:hover{
+    background-color: #EB4800
+}
+
+#detailParrilla .voto:hover a{
+    background-color: #EB742B;
+    transition: all .2 ease;
+} 
+
+
+
 /* ------------------ Mediaquery ------------------ */
 
 /*-Tablet-*/
@@ -1323,6 +1432,17 @@ footer div .footDown .copyright{
         width: 50%;
         margin-bottom: 1.5em;
     }
+    
+    /*-Parrilla Detail-*/
+    .interestU ul.detail li:first-child{
+        width: 30%!important;
+    }
+    
+    .interestU ul li:first-child figure{
+        width: 100%!important;
+    }
+    
+    
 }
 
 /*-Laptop-*/
@@ -1613,9 +1733,32 @@ footer div .footDown .copyright{
     }
     
     /*-Listado de parrillas-*/
+    #detailParrilla article{
+        flex-direction: row;
+    }
+    
     #parrillaList>section{
         margin-top: 3.5em
     }
+    
+    #detailParrilla article .infoParrilla{
+        width: 55%;
+        padding-right: 2.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #detailParrilla article>figure{
+        width: 45%;
+    }
+    
+    #detailParrilla .voto{
+        width: fit-content;
+        margin: auto;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+    
 }
 
 /*-Desktop-*/
@@ -1671,6 +1814,10 @@ footer div .footDown .copyright{
     
     #ranking .tablaPosiciones ul>a{
         margin-top: 2em
+    }
+    
+    #detailParrilla article .separator>figure{
+        padding: 0
     }
     
 }
