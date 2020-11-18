@@ -1192,7 +1192,22 @@ footer div .footDown .copyright{
 
 .bannerVertical{
     padding: 1em;
+    margin: auto;
     margin-bottom: 2em;
+    max-width: 27.3em;
+    padding-bottom: 0;
+}
+
+.bannerVertical:hover{
+    background-color: #ffdf9e
+}
+
+.bannerVertical:hover h3{
+    text-decoration: none;
+}
+
+.bannerVertical h3:hover{
+    text-decoration: none;
 }
 
 .bannerVertical .separator .middles{
@@ -1201,6 +1216,7 @@ footer div .footDown .copyright{
 
 .bannerVertical .separator>figure{
     width: 7.3em;
+    padding: 0;
 }
 
 .bannerVertical .separator>figure img{
@@ -1239,7 +1255,17 @@ footer div .footDown .copyright{
     margin-top: 7em;
 }
 
+#detailParrilla .moreDetails{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
 #detailParrilla .sectionsDetails{
+    margin-bottom: 3em;
+}
+
+#detailParrilla>aside{
     
 }
 
@@ -1251,6 +1277,47 @@ footer div .footDown .copyright{
     margin-right: 1em;
     width: 25%;
     max-height: 4em;
+}
+
+#postales .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 1em;
+    width: 14%;
+    max-height: 4em;
+}
+
+#notasRelacionadas .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/13.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    margin-right: 1em;
+    width: 20%;
+    max-height: 4em;
+}
+
+#recomendadas .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/15.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    margin-right: 1em;
+    width: 20%;
+    max-height: 4em;
+}
+
+
+#detalles ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#detalles ul li h3{
+    font-size: 1.5em;
 }
 
 #detailParrilla .moreDetails .sectionsDetails .datosList .redesParrilla a{
@@ -1265,10 +1332,120 @@ footer div .footDown .copyright{
     border-radius: 50%;
 }
 
+#detailParrilla .moreDetails .sectionsDetails .datosList .redesParrilla a:hover{
+    background-color: #ce4000;
+    text-decoration: none
+}
+
 #detailParrilla .moreDetails .sectionsDetails .datosList .redesParrilla i{
     display: flex;
     align-items: center;
+    text-decoration: none
 }
+
+#postales{
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+#postales .gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#postales .gallery li{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#postales .gallery figure{
+    height: 11.5em;
+    overflow: hidden;
+}
+
+#postales .gallery figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#notasRelacionadas{
+    margin-bottom: 5em;
+}
+
+#notasRelacionadas .listadoRecomendadas{
+    display: block;
+}
+
+#notasRelacionadas .listadoRecomendadas>div figure{
+    width: 100%;
+}
+
+#notasRelacionadas .listadoRecomendadas>div figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#notasRelacionadas .listadoRecomendadas>div{
+    margin-bottom: 4em;
+}
+
+#notasRelacionadas .listadoRecomendadas>div{
+    text-align: center
+}
+
+#notasRelacionadas .listadoRecomendadas>div .contentFlag{
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+#notasRelacionadas .listadoRecomendadas>div h3{
+    margin-bottom: .5em;
+}
+
+#recomendadas .listadoRecomendadas ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recomendadas .listadoRecomendadas ul li{
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+#recomendadas .listadoRecomendadas ul li{
+    display: flex;
+}
+
+#recomendadas .listadoRecomendadas ul li figure{
+    width: 40%;
+}
+
+#recomendadas .listadoRecomendadas ul li figure img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+#recomendadas .listadoRecomendadas ul li .infoRecom{
+    margin-left: 1em;
+    width: 60%;
+}
+
+#recomendadas .listadoRecomendadas ul li .infoRecom h3{
+    font-size: 1.25em;
+}
+
+#recomendadas .listadoRecomendadas ul li .infoRecom div a{
+    font-size: .875em;
+}
+
+
+
 
 /* ------------------ Mediaquery ------------------ */
 
@@ -1524,7 +1701,66 @@ footer div .footDown .copyright{
         width: 100%!important;
     }
     
+    #detalles ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
+    #detalles ul li{
+        width: 45%;
+    }
+    
+    #postales .tituloSection .imageSection{
+        width: 7%;
+    }
+    
+    #notasRelacionadas .tituloSection .imageSection{
+        background-image: url(../img/ilustraciones/13.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-right: 1em;
+        width: 12%;
+        max-height: 4em;
+    }
+    
+    #recomendadas .tituloSection .imageSection{
+        background-image: url(../img/ilustraciones/15.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        margin-right: 1em;
+        width: 12%;
+        max-height: 4em;
+    }
+    
+    #postales .gallery li{
+        width: 32%;
+    }
+    
+    #notasRelacionadas .listadoRecomendadas>div{
+        display: flex;
+    }
+    
+    #notasRelacionadas .listadoRecomendadas>div{
+        text-align: left;
+    }
+    
+    #notasRelacionadas .listadoRecomendadas>div div.info{
+        margin-left: 1.7em;
+    }
+    
+    #notasRelacionadas .listadoRecomendadas>div .contentFlag{
+        margin-left: 1.2em;
+    }
+    
+    #recomendadas .listadoRecomendadas ul{
+        justify-content: space-between
+    }
+    
+    #recomendadas .listadoRecomendadas ul li{
+        width: 48%;
+    }
 }
 
 /*-Laptop-*/
@@ -1839,6 +2075,41 @@ footer div .footDown .copyright{
         margin: auto;
         margin-top: auto;
         margin-bottom: 0;
+    }
+    
+    #detailParrilla .moreDetails{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #detailParrilla .moreDetails .sectionsDetails{
+        width: 70%;
+        padding-right: 2.5em;
+    }
+
+    #detailParrilla .moreDetails>aside{
+        width: 30%;
+    }
+    
+    #detailParrilla aside .ranking{
+        margin: 0;
+        margin-top: 7em;
+    }
+    
+    #detailParrilla aside #ranking{
+        width: 100%;
+    }
+    
+    #detailParrilla .moreDetails{
+        margin-top: 7em;    
+    }   
+    
+    #detailParrilla #ranking .rankingTitle{
+        top: -2em;
+    }
+    
+    #detailParrilla #ranking::before{
+        top: -105px;
     }
     
 }
