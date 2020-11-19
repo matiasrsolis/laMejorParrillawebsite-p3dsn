@@ -1610,6 +1610,17 @@ footer div .footDown .copyright{
 }
 
 
+/*-Notas List-*/
+#notasList .ultimas{
+    margin-top: 3em;
+}
+
+#notasList .ultimas ul li:first-child{
+    
+}
+
+
+
 /* ------------------ Mediaquery ------------------ */
 
 /*-Tablet-*/
@@ -1944,6 +1955,16 @@ footer div .footDown .copyright{
     
     .notaPage section#portal{
         margin-bottom: 2em;
+    }
+    
+    
+    /*-Notas List-*/
+    #notasList .ultimas{
+        margin-top: 4em;
+    }
+    
+    #notasList .ultimas ul{
+        display: flex;
     }
 }
 
