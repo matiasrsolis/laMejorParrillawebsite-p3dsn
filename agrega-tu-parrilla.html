@@ -40,11 +40,13 @@
        <div class="marginWidth">
           <div class="blockFlex contentListsNav">
               <ul class="navPages">
-                   <li><a href="parrillaList.html">Ranking</a></li>
-                   <li><a href="parrillaList.html">Agregar tu parrilla</a></li>
-                   <li><a href="parrillaList.html">Promocionar tu parrilla</a></li>
-                   <li><a href="parrillaList.html">Quiénes somos</a></li>
-                   <li><a href="parrillaList.html">Contacto</a></li>
+                   <ul class="navPages">
+                   <li><a href="index.html#ranking">Ranking</a></li>
+                   <li><a href="agrega-tu-parrilla.html">Agregar tu parrilla</a></li>
+                   <li><a href="notasList.html">El camino de la parrilla</a></li>
+                   <li><a href="#">Quiénes somos</a></li>
+                   <li><a href="#">Contacto</a></li>
+               </ul>
                </ul>
                    
                <ul>
@@ -84,8 +86,179 @@
        </div>
        
     </nav>
-    <main>
+    <main id="agregaParrilla">
+        
+        <div class="marginWidth">
+            
+            <article>
                 
+                <div class="tituloSection">
+                   <div class="imageSection"></div>
+                   <div class="dobleSubrayado">
+                       <h2><div>Agregá tu parrilla</div></h2>    
+                   </div>
+               </div>
+               
+               <div class="textAdd">
+                   <p>
+                       A través de este formulario podes dar de alta tu establecimiento y pizzería. El alta de completamente gratuito. Avísanos si interesa tener mayor difusión en nuestro sitio y redes sociales. ¡Bienvenidos!
+                   </p>
+               </div>
+                
+                <form action="">
+                     
+                      <input type="text" id="user" name="user" required placeholder="Nombre y Apellido*">
+                      
+                      <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                      
+                      <input type="email" id="email" name="email" required placeholder="Correo electrónico*">
+                      
+                      <select id="establecimiento" required>
+                          <option value="null" selected>Tipo de establecimiento*</option>
+                          <option value="al-paso">Al paso</option>
+                          <option value="asador">Asador</option>
+                          <option value="parrilla">Parrilla</option>
+                          <option value="parrilla-gourmet">Parrilla gourmet</option>
+                          <option value="parrilla-libre">Parrilla libre</option>
+                          <option value="restaurant-con-parrilla">Restaurant con parrilla</option>
+                      </select>
+                     
+                      <input type="text" id="name" name="name" required placeholder="Nombre del establecimiento*">
+                      
+                      <input type="url" id="web" name="web" placeholder="Sitio Web">
+                      
+                      <input type="url" id="facebook" name="facebook" placeholder="Link de Facebbok">
+                      
+                      <input type="text" id="horarios" name="horarios" placeholder="Horarios">
+                      
+                      <textarea name="features" id="features" placeholder="Características (más de una, separada por comes)"></textarea>
+                      
+                      <input type="text" id="address" name="address" required placeholder="Dirección*">
+                      
+                      <input type="text" id="city" name="city" required placeholder="Localidad*">
+                      
+                      <input type="text" id="state" name="state" required placeholder="Provincia, Estado, Región*">
+                      
+                      <input type="text" id="country" name="country" required placeholder="País*">
+                     
+                      <div class="form-group photography">
+                            <label for="photo">Adjuntanos una foto*</label>
+                            <input type="file" class="form-control-file" id="photo" required>
+                            <span>Tamaño Máx.: 2000kb Extenciones: jpg,gif,jpeg,png</span>
+                      </div>
+                      
+                      <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción"></textarea>
+                      
+                      <div class="form-group gallery">
+                            <label for="photo">Adjuntanos una foto*</label>
+                            <input type="file" class="form-control-file" id="photo" required>
+                            <span>Tamaño Máx.: 2000kb Extenciones: jpg,gif,jpeg,png</span>
+                      </div>
+                      
+                      <div class="btnEnviar">
+                          <input type="button" value="Enviar" class="btnStrongOrange">
+                      </div>
+                      
+                </form>
+                
+            </article>
+            
+            <aside class="">
+                   <div class="sticky">
+                        <div class="bgVainilla bannerVertical">
+                           <a href="#">
+                                <div class="separator flex">
+                                   <div class="middles"></div>
+                                   <figure>
+                                       <img src="img/la_mejor_parrilla_logo_iso_fondoclaro.png">
+                                   </figure>
+                                   <div class="middles"></div>
+                                </div>
+                                <div class="titleBanner">
+                                    <h3 class="titleuno mayuscula">
+                                        <div><i class="fab fa-youtube fontStrongOrange"></i></div>
+                                        Seguinos en
+                                        <span class="mayuscula fontStrongOrange">YouTube</span>
+                                    </h3>
+                                </div>
+                                <div class="separator flex">
+                                   <div class="middles"></div>
+                                   <figure class="separatorBottom">
+                                       <img src="img/ilustraciones/12.png">
+                                   </figure>
+                                   <div class="middles"></div>
+                                </div>
+                           </a>
+                        </div>
+
+                        <div class="bgVainilla bannerVertical">
+                           <a href="agrega-tu-parrilla.html">
+                            <div class="separator flex">
+                               <div class="middles"></div>
+                               <figure>
+                                   <img src="img/la_mejor_parrilla_logo_iso_fondoclaro.png">
+                               </figure>
+                               <div class="middles"></div>
+                            </div>
+                            <div class="titleBanner">
+                                <h3 class="titleuno mayuscula">
+                                    ¿Tu parrilla favorita no está?
+                                    <span class="mayuscula fontStrongOrange block">Sumala aquí<i class="fas fa-caret-right"></i></span>
+                                </h3>
+                            </div>
+                            <div class="separator flex">
+                               <div class="middles"></div>
+                               <figure class="separatorBottom">
+                                   <img src="img/ilustraciones/8.png">
+                               </figure>
+                               <div class="middles"></div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            
+        </div>
+        
+         <aside class="bgVainilla" id="populares">
+            <div class="marginWidth">
+                <h3>Más buscados</h3>
+                <div>
+                    <ul>
+                        <h4>Tipo de parrillas populares</h4>
+                        <li><a href="parrillaList.html">La mejor</a></li>
+                        <li><a href="parrillaList.html">La mejor</a></li>
+                        <li><a href="parrillaList.html">La mejor</a></li>
+                        <li><a href="parrillaList.html">La mejor</a></li>
+                        <li><a href="parrillaList.html">La mejor</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Ciudades populares</h4>
+                        <li><a href="parrillaList.html">La mejor parrilla en Buenos Aires</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Buenos Aires</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Buenos Aires</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Buenos Aires</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Buenos Aires</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Barrios populares</h4>
+                        <li><a href="parrillaList.html">La mejor parrilla en Boedo</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Boedo</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Boedo</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Boedo</a></li>
+                        <li><a href="parrillaList.html">La mejor parrilla en Boedo</a></li>
+                    </ul>
+                    <ul>
+                        <h4>Parrillas destacadas</h4>
+                        <li><a href="parrillaList.html">Parrilla Los 3 Ases</a></li>
+                        <li><a href="parrillaList.html">Ferreiro</a></li>
+                        <li><a href="parrillaList.html">Los Blancos</a></li>
+                        <li><a href="parrillaList.html">Juliana´s</a></li>
+                        <li><a href="parrillaList.html">Spontini</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>       
     </main>
     
     <footer class="bgBlack">

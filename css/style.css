@@ -267,6 +267,10 @@ nav#secondaryNav form button i{
     font-size: 1.2em;
 }
 
+nav#secondaryNav form input{
+    color: #ffffff;
+}
+
 nav#secondaryNav form input::placeholder{
     color:#ffffff;
 }
@@ -278,6 +282,22 @@ nav#secondaryNav .redes a{
 
 nav#secondaryNav i.fab.fontWhite{
     font-size: 1.3em;
+    transition: all .2s ease;
+}
+
+nav#secondaryNav .redes a:hover i{
+    color: #EB742B;
+    transition: all .2s ease;
+}
+
+nav#secondaryNav form button:hover i{
+    color: #EB742B;
+    transition: all .2s ease;
+}
+
+nav#secondaryNav form focus:hover i{
+    color: #EB742B;
+    transition: all .2s ease;
 }
 
 .followusNav{
@@ -285,6 +305,8 @@ nav#secondaryNav i.fab.fontWhite{
     align-content: center;
     justify-content: center;
     margin-top: 1em;
+    
+    display: none;
 }
 
 .followusNav>div{
@@ -377,6 +399,10 @@ nav#secondaryNav i.fab.fontWhite{
     margin-top: 2em;
 }
 
+#portal ul{
+    margin-bottom: 5em;
+}
+
 #portal ul li{
     width: 100%;
     margin-bottom: 3em;
@@ -386,7 +412,7 @@ nav#secondaryNav i.fab.fontWhite{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 }
 
 #portal ul li:not(:first-of-type) figure{
@@ -654,6 +680,7 @@ section#videos {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    max-width: 65px;
 }
 
 #videos .tituloSection h2{
@@ -695,7 +722,7 @@ section#videos {
 
 .doubleComponent{
     display: block;
-    margin-top: 6em;
+    margin-top: 5em;
     margin-bottom: 6em;
 }
 
@@ -734,7 +761,7 @@ section#videos {
     height: 111px;
     z-index: -1;
     position: absolute;
-    top: -76px;
+    top: -77px;
     left: 0
 }
 
@@ -807,7 +834,7 @@ section#videos {
     width: 100%;
     position: relative;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 2em;
 }
 
 #destacada>figure{
@@ -1695,6 +1722,81 @@ footer div .footDown .copyright{
 }
 
 
+/*-Agrega tu parrilla-*/
+#agregaParrilla .tituloSection .imageSection{
+    background-image: url(../img/ilustraciones/28.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    margin-right: 1em;
+    width: 18%;
+}
+
+#agregaParrilla div>article{
+    margin-top: 3em;
+}
+
+#agregaParrilla article .textAdd{
+    margin-top: 2em;
+}
+
+#agregaParrilla article form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 50em;
+    margin: auto;
+    margin-top: 3.5em;
+}
+
+#agregaParrilla article form input,
+#agregaParrilla article form select,
+#agregaParrilla article form textarea{
+    display: block;
+    padding: .5em;
+    border: solid 1px #1D1D1B;
+    margin-bottom: 2em;
+    background-color: rgba(248, 245, 239, 0.83);
+    border-radius: 3px;
+}
+
+#agregaParrilla article form input:focus{
+    border: solid 1px #EB4800;
+    background-color: #ffffff;
+}
+
+#agregaParrilla article form textarea{
+    height: 15em;
+}
+
+#agregaParrilla article form .form-group{
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+#agregaParrilla article form .form-group label,
+#agregaParrilla article form .form-group input{
+    display: block;
+}
+
+#agregaParrilla article form .form-group input{
+    margin-bottom: .5em;
+}
+
+#agregaParrilla article form .form-group span{
+    font-style: italic;
+}
+
+#agregaParrilla article form .btnEnviar input{
+    display: block;
+    width: 100%;
+    background-color: #EB4800;
+    border: none
+}
+
+#agregaParrilla article form .btnEnviar input:hover{
+    background-color: #EB742B;
+}
 
 /* ------------------ Mediaquery ------------------ */
 
@@ -1749,6 +1851,7 @@ footer div .footDown .copyright{
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+        margin-bottom: 2em;
     }
     
     #portal ul li{
@@ -1814,7 +1917,7 @@ footer div .footDown .copyright{
     .banner .lineBanner h3{
         /*margin: .6em 0;*/
         margin: 1.2em 0;
-        padding-left: 2em;
+        padding-left: 0em;
         font-size: 25px;
     }
     
@@ -2097,6 +2200,40 @@ footer div .footDown .copyright{
         margin-top: 0;
     }
     
+    /*-Agrega Parrilla-*/
+    #agregaParrilla article form{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #agregaParrilla article form input,
+    #agregaParrilla article form select{
+        width: 48%;
+    }
+    
+    #agregaParrilla article form textarea{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    #agregaParrilla article form .form-group{
+        width: 100%;
+    }
+    
+    #agregaParrilla article form .form-group label,
+    #agregaParrilla article form .form-group input{
+        width: 100%;
+    }
+    
+    #agregaParrilla article form .btnEnviar{
+        width: 100%;
+    }
+    
+    #agregaParrilla article form .btnEnviar input{
+        width: 50%;
+        margin: auto
+    }
+    
 }
 
 
@@ -2110,7 +2247,7 @@ footer div .footDown .copyright{
         max-width: 58em;
         margin: auto;
         margin-top: 3.5em;
-        margin-bottom: 0em;
+        margin-bottom: 2em;
     }
     
     nav#secondaryNav i.fab.fontWhite{
@@ -2501,6 +2638,36 @@ footer div .footDown .copyright{
     
     #notasList .ultimas ul li:first-child{
         margin-right: 3em;
+    }
+    
+    #parrillasDelMes .mesListado ul{
+        margin-bottom: 4em;
+    }
+    
+    
+    /*-Agrega Parrilla-*/
+    #agregaParrilla article form .btnEnviar input{
+        width: 30%;
+    }
+    
+    #agregaParrilla .tituloSection .imageSection{
+        width: 3.5em;
+    }
+    
+    #agregaParrilla>div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4em;
+        margin-bottom: 6em;
+    }
+    
+    #agregaParrilla>div article{
+        width: 70%;
+        margin-top: 0;
+    }
+    
+    #agregaParrilla>div aside{
+        width: 25%;
     }
     
 }
