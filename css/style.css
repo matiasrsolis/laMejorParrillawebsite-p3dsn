@@ -438,14 +438,23 @@ nav#secondaryNav form focus:hover i{
     margin-top: .3em;
 }
 
-/*#portal ul li:first-child figure{
-    order: 1
-}*/
+figure{
+    overflow: hidden;
+}
+
+
+
+#portal ul li figure:hover img{
+    width: 110%;
+    height: 110%;
+    transition: all .3s ease;
+}
 
 #portal ul li figure img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: all .3s ease;
 }
 
 #portal ul li:first-child .infoPortal{
@@ -848,6 +857,13 @@ section#videos {
     width: 100%;
     height: 100%;
     object-position: center;
+    transition: all .3s ease
+}
+
+#destacada>figure:hover img{
+    width: 110%;
+    height: 110%;
+    transition: all .3s ease
 }
 
 #destacada .destacadaInfo{
@@ -863,6 +879,15 @@ section#videos {
 #destacada .destacadaInfo .contentInfoDestacada{
     max-width: 23em;
     margin: auto;
+}
+
+#destacada h2 a:hover{
+    color: #EB4800;
+    text-decoration: none;
+}
+
+#destacada p a:hover{
+    color: #ffffff
 }
 
 #destacada .destacadaInfo .separator{
@@ -1654,11 +1679,27 @@ footer div .footDown .copyright{
     overflow: hidden;
 }
 
+#notasList .ultimas ul li:nth-child(2) a figure{
+    max-height: 300px;
+}
+
+#notasList .ultimas ul li:first-child a figure{
+    max-height: 349px;
+}
+
 #notasList .ultimas figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all .3s ease;
+}
+
+#notasList .ultimas figure{
+    overflow: hidden;
+}
+
+#notasList .ultimas figure:hover img{
+    width: 110%;
 }
   
 #notasList .ultimas .contentFlag{
@@ -1699,10 +1740,21 @@ footer div .footDown .copyright{
     margin-bottom: .5em;
 }
 
-#notasList .contentSections .moreNotas>div img{
+#notasList .contentSections .moreNotas>div figure img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: all .3s ease;
+}
+
+#notasList .contentSections .moreNotas>div figure{
+    max-height: 170px;
+}
+
+#notasList .contentSections .moreNotas>div figure:hover img{
+    width: 110%;
+    height: 110%;
+    transition: all .3s ease;
 }
 
 #notasList .ultimas ul{
@@ -2738,6 +2790,10 @@ footer div .footDown .copyright{
     
     .notaPage .contentNota{
         margin-top: 4em;
+    }
+    
+    #notasList .ultimas ul li:first-child a figure{
+        max-height: 360px;
     }
     
 }
