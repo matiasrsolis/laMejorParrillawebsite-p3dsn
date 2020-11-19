@@ -81,6 +81,11 @@ a:hover{
     font-style: normal;
 }
 
+.sticky{
+    position: sticky;
+    top: 2em;
+}
+
 .fontBlack{
     color: #1D1D1B;
 }
@@ -1449,6 +1454,43 @@ footer div .footDown .copyright{
 }
 
 
+/*-Nota-*/
+.notaPage{
+    
+}
+
+.notaPage .contentNota{
+    margin-top: 2em;
+}
+
+.notaPage .contentNota h1{
+    margin-bottom: .5em;
+}
+
+.notaPage .contentNota .share{
+    margin-bottom: 1em;
+}
+
+.notaPage .interestU .tituloSection{
+    margin-bottom: 2em;
+}
+
+.notaPage .imgPortada .carousel-inner .carousel-item{
+    height: 37vh;
+}
+
+.notaPage .articulo .widthText{
+    max-width: 40em;
+    margin: auto;
+}
+
+
+.notaPage .imgPortada .carousel-inner .carousel-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /* ------------------ Mediaquery ------------------ */
@@ -1765,7 +1807,25 @@ footer div .footDown .copyright{
     #recomendadas .listadoRecomendadas ul li{
         width: 48%;
     }
+    
+    /*-Nota-*/
+    .notaPage .contentNota{
+        justify-content: space-between;
+    }
+    
+    .notaPage .sideBar{
+        width: 35%;
+    }
+    
+    .notaPage .articulo{
+        width: 60%;
+    }
+    
+    .notaPage .imgPortada .carousel-inner .carousel-item{
+        height: 16.5em;
+    }
 }
+
 
 /*-Laptop-*/
 @media(min-width: 62.5em){
@@ -2116,7 +2176,20 @@ footer div .footDown .copyright{
         top: -105px;
     }
     
+    /*-Nota-*/
+    .notaPage .articulo{
+        width: 70%;
+    }
+    
+    .notaPage .sideBar{
+        width: 25%;
+    }
+    
+    .notaPage .imgPortada .carousel-inner .carousel-item{
+        height: 26.5em;
+    }
 }
+
 
 /*-Desktop-*/
 @media(min-width: 93.75em){
@@ -2175,6 +2248,10 @@ footer div .footDown .copyright{
     
     #detailParrilla article .separator>figure{
         padding: 0
+    }
+    
+    .notaPage .imgPortada .carousel-inner .carousel-item{
+        height: 26.5em;
     }
     
 }
