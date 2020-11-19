@@ -1508,7 +1508,7 @@ footer div .footDown .copyright{
 }
 
 .notaPage .contentNota .articulo .encabezado>.share{
-    margin: 2.5em 0 2em;
+    margin: 1em 0 2em;
 }
 
 .notaPage .contentNota .articulo .separator>figure{
@@ -1615,8 +1615,83 @@ footer div .footDown .copyright{
     margin-top: 3em;
 }
 
+#notasList .ultimas ul li{
+    margin-bottom: 4.5em;
+}
+
 #notasList .ultimas ul li:first-child{
     
+}
+
+#notasList .ultimas ul li a figure{
+    overflow: hidden;
+}
+
+#notasList .ultimas figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+  
+#notasList .ultimas .contentFlag{
+    margin-bottom: 1em;
+}
+
+#notasList #pagination{
+    width: 100%;
+}
+
+#notasList .contentSections{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+#notasList .contentSections>aside{
+    margin-bottom: 5em;
+    margin-top: 2em;
+    max-width: 20em;
+}
+
+#notasList .contentSections .moreNotas>div{
+    margin-bottom: 3em;
+    border-bottom: 1px solid #1D1D1B;
+    padding-bottom: 1em;
+}
+
+#notasList .contentSections .moreNotas>div:last-of-type{
+    border-bottom: none
+}
+
+#notasList .contentSections .moreNotas>div .contentFlag{
+    margin-bottom: .5em;
+}
+
+#notasList .contentSections .moreNotas>div h3{
+    margin-bottom: .5em;
+}
+
+#notasList .contentSections .moreNotas>div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#notasList .ultimas ul{
+    border-bottom: 2px solid #1D1D1B;
+    position: relative
+}
+
+#notasList .ultimas ul:before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    border-bottom: 1px solid #1D1D1B;
+    z-index: -1
 }
 
 
@@ -1957,6 +2032,9 @@ footer div .footDown .copyright{
         margin-bottom: 2em;
     }
     
+    .notaPage .contentNota h1{
+        font-size: 2.625em; 
+    }
     
     /*-Notas List-*/
     #notasList .ultimas{
@@ -1966,6 +2044,59 @@ footer div .footDown .copyright{
     #notasList .ultimas ul{
         display: flex;
     }
+    
+    
+    #notasList .moreNotas>div{
+        display: flex;
+    }
+    
+    #notasList .moreNotas>div{
+        text-align: left;
+    }
+    
+    #notasList .moreNotas>div div.info{
+        margin-left: 1.7em;
+        width: 60%;
+    }
+    
+    #notasList .moreNotas>div .contentFlag{
+        margin-left: 1.2em;
+        margin-bottom: 1em;
+    }
+    
+    #notasList .ultimas ul{
+        justify-content: space-between;
+    }
+    
+    #notasList .ultimas ul li{
+        margin-bottom: 1em;
+    }
+    
+    #notasList .ultimas ul li:first-child{
+        width: 60%;
+        margin-right: 2em;
+    }
+    
+    #notasList .ultimas ul li:not(:first-of-type){
+        width: 40%;
+    }
+    
+    #notasList .contentSections{
+        flex-direction: row;
+        margin-top: 3em;
+        margin-bottom: 2em;
+        justify-content: space-between;
+    }
+    
+    #notasList .contentSections .moreNotas{
+        width: 60%;
+    }
+    
+    #notasList .contentSections>aside{
+        width: 35%;
+        margin-top: 0;
+    }
+    
 }
 
 
@@ -2330,6 +2461,48 @@ footer div .footDown .copyright{
     .notaPage .imgPortada .carousel-inner .carousel-item{
         height: 26.5em;
     }
+    
+    #notasList .contentSections{
+        margin: auto;
+    }
+    
+    #notasList .contentSections .marginWidth{
+        margin-top: 0;
+    }
+    
+    #notasList .contentSections aside.marginWidth{
+        padding-left: 0;
+    }
+    
+    #notasList .ultimas ul li:not(:first-of-type){
+        width: 40%;
+    }
+    
+    #notasList .contentSections{
+        margin-top: 4em;
+    }
+    
+    #notasList .ultimas{
+        margin-bottom: 2em;
+    }
+    
+    #notasList .ultimas ul{
+        padding-bottom: 2em
+    }
+    
+    #notasList .contentSections .moreNotas{
+        width: 70%;
+    }
+    
+    #notasList .contentSections>aside{
+        max-width: inherit;
+        width: 25%;
+    }
+    
+    #notasList .ultimas ul li:first-child{
+        margin-right: 3em;
+    }
+    
 }
 
 
